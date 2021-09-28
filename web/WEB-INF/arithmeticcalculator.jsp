@@ -8,11 +8,11 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <link rel="stylesheet" href="style_sheet">
+        <link rel="stylesheet" href="style/style_sheet.css">
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <title>JSP Page</title>
     </head>
-    <body class="body">
+    <body class="box">
         <h1>Arithmetic Calculator</h1>
         <form method="POST" action="arithmetic">
             <div> 
@@ -32,8 +32,8 @@
             </div>
             <br>
             <div>
-                Result:
-                <input placeholder="---" type="text" class="box">${message}
+                Result: 
+                ${message}
             </div>
             <div>
                 <p> <a href="age"> Age Calculator</a></p>

@@ -17,6 +17,8 @@ public class ArithmeticCalculatorServlet extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
+        String message = "---";
+        request.setAttribute("message", message);
         getServletContext().getRequestDispatcher("/WEB-INF/arithmeticcalculator.jsp").forward(request, response);
         return;   
     }
@@ -55,6 +57,8 @@ public class ArithmeticCalculatorServlet extends HttpServlet {
               case "%":
                 request.setAttribute("message",mod_ans);
                 break;
+              default:
+                  request.setAttribute("message", "---");
           }  
         }
         getServletContext().getRequestDispatcher("/WEB-INF/arithmeticcalculator.jsp").forward(request, response);

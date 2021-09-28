@@ -8,10 +8,11 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <link rel="stylesheet" href="style/style_sheet.css">
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <title>age</title>
     </head>
-    <body>
+    <body class="box">
         <h1>Age Calculator</h1>
         <form method="POST" action="age">
             <div>
